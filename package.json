@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@material/icon-button": "^14.0.0",
     "vite": "^4.2.1"
   }
 }
