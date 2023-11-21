@@ -1,4 +1,4 @@
-# HTML, CSS, JS (Auto Refresh)
+# TODO-Application-UI
 
 This template is a starter for building a website with HTML, CSS and JS, powered by [Vite](https://vitejs.dev/). HTML provides the basic structure, CSS controls formatting, and JavaScript controls the behavior of different elements.
 
@@ -17,11 +17,3 @@ export default defineConfig({
   }
 })
 ```
-
-## Packages
-
-Because this template uses Vite to build your code, you can add install and use npm packages. Simple open the Packager tool to search and manage your packages.
-
-## Learn More
-
-Check out [the vite docs](https://vitejs.dev) to learn more about configuring a frontend application.
