@@ -1,3 +1,6 @@
+@use "@material/icon-button";
+@include icon-button.core-styles;
+
 body {
   background-color: #b0b0b0;
 }
@@ -30,6 +33,7 @@ body {
   font-size: 50pt;
 }
 
+
 .title button {
   position: relative;
   bottom: 10px;
@@ -53,21 +57,20 @@ body {
 
 .list {
   width: 950px;
-  height: 490px;
+  max-height: calc(100vh - 300px);
   background-color: #ffffff;
-  overflow-y: scroll;
+  overflow-y: auto;
   margin: 25px auto;
-
 }
 
-.reminder {
+.todo {
   width: 900px;
   height: 55px;
   color: #000;
   background-color: #b4f1fe;
   list-style: none;
   line-height: 50px;
-  margin: 5px auto;
+  margin: 10px auto;
   position: relative;
   border-radius: 10px;
   padding: 0 10px;
@@ -78,9 +81,15 @@ body {
   align-items: center;
   box-shadow: 4px 5px #89c5d2;
 }
+.todo.completed {
+  opacity: 0.4;
+}
+
+.todo span.editing {
+  background-color: #ffffff;
+}
 
 .actions {
-  margin-left: 510px;
   margin-left: auto;
   display: flex;
   gap: 10px;
@@ -94,6 +103,13 @@ body {
   border: none;
   border-radius: 5px;
   box-shadow: 0 5px #999;
+}
+.btn-check.selected {
+  background-color: #fff;
+  color: #00d62b;
+  border: 1px solid #00d62b;
+  transform: translateY(4px);
+  box-shadow: 0 1px #666;
 }
 
 .btn-check:hover {
