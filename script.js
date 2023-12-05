@@ -1,7 +1,8 @@
-const todoList = document.getElementById("todo-list");
 const newTodoBtn = document.getElementById("new-todo")
+const todoList = document.getElementById("todo-list")
+fetchTodos()
 
-function createTodo(id, message) {
+function createTodo(id, message, completion) {
   const todo_li = document.createElement("li")
   todo_li.id = id
   todo_li.className = "todo"
@@ -28,11 +29,12 @@ function createTodo(id, message) {
       checkBtn.classList.toggle("selected")
     }
   })
-
+  
   deleteBtn.addEventListener("click", () => {
     if (todo_li.id == id) {
       todoList.removeChild(todo_li)
     }
+    deleteTodo(id)
   })
 
   // Add event listener for double-click to update todo
@@ -51,6 +53,11 @@ function createTodo(id, message) {
       spanMessage.classList.toggle("editing")
     }
   });
+
+  if (completion == true) {
+    todo_li.classList.toggle("completed")
+    checkBtn.classList.toggle("selected")
+  }
   
   // Append Buttons to actions container
   actionContainer.appendChild(checkBtn)
@@ -59,13 +66,6 @@ function createTodo(id, message) {
   // Append all to todo li
   todo_li.appendChild(spanMessage)
   todo_li.appendChild(actionContainer)
-
-  // Focus on writing the title once created
-  setTimeout(() => {
-    spanMessage.contentEditable = true
-    spanMessage.focus();
-    spanMessage.classList.toggle("editing")
-  }, 1);
   
   return todo_li
 }
@@ -81,5 +81,49 @@ function limitCharacters(message) {
 
 // New Todo Button Listener
 newTodoBtn.addEventListener("click", () => {
-  todoList.appendChild(createTodo(Date.now(), "new todo"))
+  let newMessage = prompt("Enter Todo Message");  
+  while (todoList.firstChild) {
+    todoList.removeChild(todoList.lastChild);
+  }
+  addTodo(newMessage)
+  fetchTodos()
 })
+
+// Add todo
+function addTodo(message) {
+  const requestOptions = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: message, description: '', completion: false, label: null })
+  };
+  fetch("http://localhost:8091/tasks", requestOptions)
+    .then(response => response.json())
+    .then(data => { console.log(data) })
+    .catch(error => {
+      console.error(error)
+    })
+}
+  
+// Fetch Todos
+function fetchTodos() {
+  fetch("http://localhost:8091/tasks")
+    .then(response => {
+      return response.json()
+    })
+    .then(data => {
+      for(let i = 0; i < data.length; i++) {
+        todoList.appendChild(createTodo(data[i].id, data[i].name, data[i].description, data[i].completion))
+      }
+    })
+    .catch(error => {
+      console.error(error)
+    })
+}
+
+// Delete Todo
+function deleteTodo(id) {
+  fetch(`http://localhost:8091/tasks/${id}`, { method: 'DELETE' })
+  .catch(error => {
+    console.error(error)
+  })
+}
