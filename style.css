@@ -1,97 +1,150 @@
-html,
+@use "@material/icon-button";
+@include icon-button.core-styles;
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #b0b0b0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-main {
-  min-height: 100vh;
-  padding: 4rem 2rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.column {
+  height: 100vh;
+  background-color: #fff;
+  width: inherit;
 }
 
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  height: 200px;
+  background-color: #3e91fe;
+  color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 0 20px;
 }
 
-.title,
-.description {
-  text-align: center;
+.title h1 {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  top: 100px;
+  font-size: 50pt;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+
+.title button {
+  position: relative;
+  bottom: 10px;
+  left: 800px;
+  color: #3e91fe;
+  background-color: #fff;
+  border: none;
+  font-size: 40px;
+  width: 120px;
+  height: 50px;
+  line-height: 40px;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 1px 5px #545454;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.title button:active {
+  box-shadow: 0 1px #545454;
+  transform: translateY(4px);
 }
 
-.grid {
+.list {
+  width: 950px;
+  max-height: calc(100vh - 300px);
+  background-color: #ffffff;
+  overflow-y: auto;
+  margin: 25px auto;
+}
+
+.todo {
+  width: 900px;
+  height: 55px;
+  color: #000;
+  background-color: #b4f1fe;
+  list-style: none;
+  line-height: 50px;
+  margin: 10px auto;
+  position: relative;
+  border-radius: 10px;
+  padding: 0 10px;
+  right: 25px;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  box-shadow: 4px 5px #89c5d2;
+}
+.todo.completed {
+  opacity: 0.4;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.todo span.editing {
+  background-color: #ffffff;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.actions {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.btn-check {
+  width: 80px;
+  height: 40px;
+  background-color: #00d62b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px #999;
+}
+.btn-check.selected {
+  background-color: #fff;
+  color: #00d62b;
+  border: 1px solid #00d62b;
+  transform: translateY(4px);
+  box-shadow: 0 1px #666;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.btn-check:hover {
+  background-color: #fff;
+  color: #00d62b;
+  border: 1px solid #00d62b;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.btn-check:active {
+  background-color: #00d62b;
+  color: #fff;
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
+}
+
+.btn-delete {
+  width: 80px;
+  height: 40px;
+  background-color: #fe3e3e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px #999;
+}
+
+.btn-delete:hover {
+  background-color: #fff;
+  color: #fe3e3e;
+  border: 1px solid #fe3e3e;
+}
+
+.btn-delete:active {
+  background-color: #fe3e3e;
+  color: #fff;
+  border: 1px solid #fe3e3e;
+  box-shadow: 0 1px #666;
+  transform: translateY(4px);
 }
