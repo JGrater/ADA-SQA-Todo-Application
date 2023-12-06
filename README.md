@@ -4,11 +4,11 @@
 
 ### Test Suite Results
 
-Main Branch:
-![Vitest Testing Status](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/actions/workflows/node.js.yml/badge.svg)
+Main Branch Tests:
 
-Final Branch:
-![Vitest Testing Status](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/actions/workflows/node.js.yml/badge.svg?branch=final)
+![Vitest Testing Status](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/actions/workflows/node.js.yml/badge.svg)
+![Vitest Coverage](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/actions/workflows/coverage.yml/badge.svg)
+![Google Lighthouse](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/actions/workflows/lighthouse.yml/badge.svg)
 
 ### Project Description
 
@@ -266,6 +266,7 @@ The code for the frontend test scenarios can be found in the following folder:
 
 ### Evidence
 #### [Front End] Test Results
+![frontend_testing_result](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/72577411/4c4e50f4-90d1-4143-b084-0e28f13a2d25)
 
 
 #### [Front End] Test Coverage Report
@@ -273,7 +274,7 @@ The code for the frontend test scenarios can be found in the following folder:
 
 #### [Back End] Test Results
 
-![image](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/119420246/7c3677b3-a0cd-434c-a833-a24ea62534e7)
+![backend_testing_result](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/119420246/7c3677b3-a0cd-434c-a833-a24ea62534e7)
 
 ## Coding Best Practices
 Coding best practices are a set of guidelines designed to improve the quality of software development and make the code more maintainable, scalable, and readable.
