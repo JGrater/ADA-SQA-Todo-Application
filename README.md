@@ -275,8 +275,11 @@ jobs:
 <To Be Filled In>
 
 ## Performance and Accessibility Audit
+Google Lighthouse was used for automated performance and accessibility testing (https://github.com/GoogleChrome/lighthouse-ci)
+Here is a sample of a [report](https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1701862677309-31108.report.html) on one of the pull requests:
 
-<To Be Filled In>
+![performance_accessibility](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/72577411/8359d00d-7b1e-4621-9cc5-b7ed8d26e0c5)
+
 
 ### Tools Used
 
