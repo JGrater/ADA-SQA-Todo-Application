@@ -10,11 +10,16 @@ Main Branch:
 Final Branch:
 ![Vitest Testing Status](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/actions/workflows/node.js.yml/badge.svg?branch=final)
 
+### Project Description
+
+Our project is a simple to-do application. It will help manage our daily tasks, which can be categorised into groups such as Personal, Work or Household. Therefore, our to-do app will have the following components: Tasks: Each task has a name, description, and a completion status (yes or no). Labels: There can be Personal, Work, Household label. Relationship: Each task must be associated with one only label, indicating the context or category of the task. This is a one-to-many relationship from tasks to labels. The same label can have zero or more tasks.
+
 ### Key Features:
 - Create new todo box
 - Delete todo box
 - Mark todo box as done
 - Edit todo description text
+- Counts the number of todos open
 - Offline capability (by storing the data locally as JSON)
 - Online capability (by storing the data in a remote database)
 
@@ -36,7 +41,7 @@ The team was split into front and back end pairs for development and testing. Th
   - Percentage Contribution: 25%
 
 - **James Brown**
-  - Role/Responsibility: Back end testing and ReadMe writing
+  - Role/Responsibility: Back end testing and readMe writing
   - Percentage Contribution: 25%
  
 - **Wares Islam**
@@ -123,28 +128,20 @@ bug with the vitest and nuxt integration
 #### [Frontend] Final Build (optional)
 ``npm run build``
 
-
-<To Be Filled In>
-
 ## Project Workflow
-
-<To Be Filled In>
-
 ### Project Management Strategies
 
-<To Be Filled In>
+For our project workflow, we adopted an agile methodology to ensure a collaborative and transparent process for all team members to review progress. 
 
-### Ceremonies
+#### Ceromonies
 
-<To Be Filled In>
+We conducted a one-week sprint with daily stand-up meetings at the beginning to coordinate  team members, ensuring all requirements would be met and work was distributed evenly. 
 
-### Retrospectives
+#### Agile Practices
 
-<To Be Filled In>
+During the sprint, we utilized a Kanban board to visualize tasks for each team member, allowing us to track the progress of individual tasks in real-time. 
 
-### Agile Practices
-
-<To Be Filled In>
+![image](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/119420246/5c914fff-2b6b-49b2-9762-34fccc2b7f0b)
 
 ## Test Methodologies and Tools
 
@@ -167,8 +164,16 @@ bug with the vitest and nuxt integration
 <To Be Filled In>
 
 ## Coding Best Practices
+Coding best practices are a set of guidelines designed to improve the quality of software development and make the code more maintainable, scalable, and readable.
 
-<To Be Filled In>
+#### Consistent Naming Conventions:
+This makes the code easier to read and understand. It includes using clear descriptive names for variable, functions, and classes, etc.
+#### Code Formatting and Organization:
+This includes proper indentation, spacing and grouping of code. Tools like linters and formatters can help enforce these rules.
+#### Commenting and Documentation:
+Comments should explain why certain decisions were made in the code. Documentation should explain what the code does, how to use it, and any dependencies it has.
+#### Error Handling:
+This involves anticipating potential problems and handling them gracefully, often through the use of try/catch blocks or returning meaningful error messages.
 
 ## CI Pipeline
 Using Node.js to run the testing on build time. Here is the config file:
@@ -260,11 +265,6 @@ jobs:
           json-final-path: './coverage/coverage-final.json'
 
 ```
-
-### Setup
-
-<To Be Filled In>
-
 ### Pull Request Strategies
 
 <To Be Filled In>
