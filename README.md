@@ -196,24 +196,16 @@ During the sprint, we utilized a Kanban board to visualize tasks for each team m
 
 ## Test Methodologies and Tools
 
-<To Be Filled In>
-
-### Test Methodologies
-
-<To Be Filled In>
+We used an agile testing methodology employed a continuous testing approach, running tests concurrently with development to give feedback and identification of potential issues quickly. Our testing process included the creation of test scenarios related the requirements and acceptance criteria. The iterative testing approach was also aligned with our project workflow adopting an agile methodolgy.
 
 ### Types of Testing
 
 |Testing Used|Why?|
 |-----|-----|
-|unit|To test if part of the code blocks for the frontend are working as expected|
-|integration|To test if integrating the frontend and javascript logic is working as expected|
+|Unit|To test blocks of code individually, ensuring each method and process is working as expected|
+|Integration|To test if integrating the frontend and javascript logic is working as expected with the Java backend, through REST endpoints, successfully  |
 
-### [Front End] Test scenarios
-
-<To Be Filled In>
-
-### [Back End] Test scenarios 
+###  Test scenarios 
 
 | Integration | Unit |      |                                                                                                                                                                                                                  |
 |-------------|------|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -377,9 +369,20 @@ jobs:
           json-final-path: './coverage/coverage-final.json'
 
 ```
+
+#### Pipeline example
+
+![image](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/119420246/7be37ff8-cc84-4b90-ae53-154715e8d168)
+
 ### Pull Request Strategies
 
-<To Be Filled In>
+#### Feature Branch Workflow:
+
+- Each member clones the main repository to their personal space.
+- Members would create a new branch for each new feature or bug fix.
+- Changes are implemented in the feature branch.
+- A pull request is submitted when the feature is ready for review.
+- After review and approval, the changes are merged into the main branch.
 
 ## Standards
 
