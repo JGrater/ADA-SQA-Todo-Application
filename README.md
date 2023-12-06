@@ -18,9 +18,7 @@ Final Branch:
 - Online capability (by storing the data in a remote database)
 
 ### Screenshots/Video
-
-![](docs/quick_showcase.mp4)
-<To Be Filled In>
+https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/72577411/b014216e-bc97-4836-a01e-afb552209d6e
 
 ## Team Description
 
