@@ -33,8 +33,24 @@ jobs:
           cache: npm
       - name: Install packages
         run: npm ci
+
       - name: Execute Coverage report
+        id: coverage
+        continue-on-error: true
         run: npm run test:coverage
+
+      - name: label when coverage fails
+        if: ${{ steps.coverage.outcome == 'failure' }}
+        uses: andymckay/labeler@1.0.4
+        with:
+          add-labels: "commit-message-rule-violation"
+
+      - name: label removal when coverage succeeds
+        if: ${{ steps.coverage.outcome == 'success' }}
+        uses: andymckay/labeler@1.0.4
+        with:
+          remove-labels: "commit-message-rule-violation"
+
       - name: Vitest Coverage Report
         if: always() # Also generate the report if tests are failing
         uses: davelosert/vitest-coverage-report-action@v2.1.1
