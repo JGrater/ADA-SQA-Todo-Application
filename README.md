@@ -1,5 +1,6 @@
-# ADA SQA "To Do List Application"
-## This is an application made for the SQA module week 2
+# ADA SQA "To Do List Application" UI
+## This is the front end UI for an application made for the SQA module week 2
+### The back end service repo can be found here: https://github.com/kasandrop/ADA-Todo
 
 ### Test Suite Results
 
@@ -22,31 +23,34 @@ https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/72577411/b014216e-
 
 ## Team Description
 
-<To Be Filled In>
+The team was split into front and back end pairs for development and testing. Then worked together on integrating and creating the readMe document.
 
 ### Team Members
 
 - **Marcin Wasilewski**
-  - Role/Responsibility: <To Be Filled In>
+  - Role/Responsibility: Back end designing and implementing  
   - Percentage Contribution: 25%
 
 - **Jason Grater**
-  - Role/Responsibility: <To Be Filled In>
+  - Role/Responsibility: Front end designing and implementing
   - Percentage Contribution: 25%
 
 - **James Brown**
-  - Role/Responsibility: <To Be Filled In>
+  - Role/Responsibility: Back end testing and ReadMe writing
   - Percentage Contribution: 25%
  
 - **Wares Islam**
-  - Role/Responsibility: <To Be Filled In>
+  - Role/Responsibility: Front end testing and creating pipeline
   - Percentage Contribution: 25%
 
 ...
 
 ## Tools Used
 
-- **Version Control:** <To Be Filled In>
+- **Version Control:**
+
+Git, GitHub
+
 - **Testing:** 
 
 |Testing:|Docs:|
@@ -76,12 +80,17 @@ Automatic coverage reports were set up for pull requests, here is an example (ht
 |-----|-----|
 |[Volar](https://github.com/vuejs/language-tools)|https://marketplace.visualstudio.com/items?itemName=Vue.volar/|
 
-- **Project Management Tools:** <To Be Filled In>
-- **Performance and Accessibility Audit:** <To Be Filled In>
+- **Project Management Tools:**
+
+Miro, Kanban Board, Google Meet
+
+- **Performance and Accessibility Audit:**
+
+|Performance and Accessibility Tools:|Docs:|
+|-----|-----|
+|[Lighthouse CI](https://github.com/apps/lighthouse-ci)|https://github.com/GoogleChrome/lighthouse-ci/blob/main/docs/getting-started.md|
 
 ## Instructions
-
-<To Be Filled In>
 
 ### How to Clone
 
