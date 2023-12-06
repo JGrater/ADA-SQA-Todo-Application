@@ -8,8 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "test:unit": "vitest --config ./vitest.config.js",
-    "test:coverage": "vitest run --coverage --silent"
+    "test:unit": "vitest --config ./vitest.config.js --silent",
+    "test:coverage": "vitest run --coverage"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
