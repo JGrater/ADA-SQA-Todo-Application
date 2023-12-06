@@ -202,6 +202,13 @@ During the sprint, we utilized a Kanban board to visualize tasks for each team m
 
 <To Be Filled In>
 
+### Types of Testing
+
+|Testing Used|Why?|
+|-----|-----|
+|unit|To test if part of the code blocks for the frontend are working as expected|
+|integration|To test if integrating the frontend and javascript logic is working as expected|
+
 ### [Front End] Test scenarios
 
 <To Be Filled In>
@@ -250,16 +257,13 @@ During the sprint, we utilized a Kanban board to visualize tasks for each team m
 | []          | []   | 5.10 | Reject Task Creation for Non-Existing Label: Verify that the repository correctly rejects the creation of a task for a non-existing label.                                                                       |
    
 
-### Types of Testing
-
-|Testing Used|Why?|
-|-----|-----|
-|unit|To test if part of the code blocks for the frontend are working as expected|
-|integration|To test if integrating the frontend and javascript logic is working as expected|
-
 ### Evidence
-
+#### [Front End] Test Coverage Report
 ![coverage_report](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/72577411/02c587f3-4723-4075-b6d8-5c9a608b059f)
+
+#### [Back End] Test results
+
+![image](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/119420246/7c3677b3-a0cd-434c-a833-a24ea62534e7)
 
 ## Coding Best Practices
 Coding best practices are a set of guidelines designed to improve the quality of software development and make the code more maintainable, scalable, and readable.
