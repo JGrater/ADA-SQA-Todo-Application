@@ -4,11 +4,11 @@
 
 ### Test Suite Results
 
-Main Branch:
-![Vitest Testing Status](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/actions/workflows/node.js.yml/badge.svg)
+Main Branch Tests:
 
-Final Branch:
-![Vitest Testing Status](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/actions/workflows/node.js.yml/badge.svg?branch=final)
+![Vitest Testing Status](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/actions/workflows/node.js.yml/badge.svg)
+![Vitest Coverage](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/actions/workflows/coverage.yml/badge.svg)
+![Google Lighthouse](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/actions/workflows/lighthouse.yml/badge.svg)
 
 ### Project Description
 
@@ -205,7 +205,22 @@ We used an agile testing methodology employed a continuous testing approach, run
 |Unit|To test blocks of code individually, ensuring each method and process is working as expected|
 |Integration|To test if integrating the frontend and javascript logic is working as expected with the Java backend, through REST endpoints, successfully  |
 
-###  Test scenarios 
+#### Frontend Test Scenarios
+
+|Integration|Unit|ID|Description|
+|-----------|----|--|-----------|
+|           |                               |1|Search for javascript rendered text|
+|           |<span align="center">✅</span>|1.1|Search for title to make sure the list counter starts at 0|
+|           |<span align="center">✅</span>|1.2|Search for todo box to make sure the box is added on the screen and visible|
+|           |<span align="center">✅</span>|2|Search for the add todo button in the HTML DOM of the component|
+|           |<span align="center">✅</span>|3|Check that the add todo button click starts the js function as expected|
+|           |<span align="center">✅</span>|4|Check if the local storage is working as expected and changing the title|
+|<span align="center">✅</span>|   |5|Check that the add todo button fully finishes without an error and is ran the correct amount of times|
+
+The code for the frontend test scenarios can be found in the following folder:
+[Test File](./components/content.test.js)
+
+#### Backend Test Scenarios 
 
 | Integration | Unit |      |                                                                                                                                                                                                                  |
 |-------------|------|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -250,12 +265,16 @@ We used an agile testing methodology employed a continuous testing approach, run
    
 
 ### Evidence
+#### [Front End] Test Results
+![frontend_testing_result](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/72577411/4c4e50f4-90d1-4143-b084-0e28f13a2d25)
+
+
 #### [Front End] Test Coverage Report
 ![coverage_report](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/72577411/02c587f3-4723-4075-b6d8-5c9a608b059f)
 
-#### [Back End] Test results
+#### [Back End] Test Results
 
-![image](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/119420246/7c3677b3-a0cd-434c-a833-a24ea62534e7)
+![backend_testing_result](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/119420246/7c3677b3-a0cd-434c-a833-a24ea62534e7)
 
 ## Coding Best Practices
 Coding best practices are a set of guidelines designed to improve the quality of software development and make the code more maintainable, scalable, and readable.
