@@ -58,7 +58,11 @@ https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/72577411/b014216e-
 |[jsdom](https://github.com/jsdom/jsdom)|https://github.com/jsdom/jsdom|
 |[happy-dom](https://github.com/capricorn86/happy-dom)|https://github.com/capricorn86/happy-dom|
 
-- **Test Code Coverage:** <To Be Filled In>
+- **Test Code Coverage:**
+  
+Automatic coverage reports were set up for pull requests, here is an example (https://github.com/JGrater/ADA-SQA-Todo-Application-UI/pull/4):
+![coverage_report](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/72577411/02c587f3-4723-4075-b6d8-5c9a608b059f)
+
 - **Frameworks/Libraries:**
 
 |Framework:|Docs:|
@@ -174,7 +178,7 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - 16.x
+          - 18.x
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
@@ -186,6 +190,66 @@ jobs:
         run: npm ci
       - name: Execute Unit tests
         run: npm run test:unit
+```
+
+```yml
+name: Vitest Coverage
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version:
+          - 18.x
+
+    permissions:
+      # Required to checkout the code
+      contents: read
+      # Required to put a comment into the pull-request
+      pull-requests: write
+      
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+      - name: Install packages
+        run: npm ci
+
+      - name: Execute Coverage report
+        id: coverage
+        continue-on-error: true
+        run: npm run test:coverage
+
+      - name: label when coverage fails
+        if: ${{ steps.coverage.outcome == 'failure' }}
+        uses: andymckay/labeler@1.0.4
+        with:
+          add-labels: "commit-message-rule-violation"
+
+      - name: label removal when coverage succeeds
+        if: ${{ steps.coverage.outcome == 'success' }}
+        uses: andymckay/labeler@1.0.4
+        with:
+          remove-labels: "commit-message-rule-violation"
+
+      - name: Vitest Coverage Report
+        if: always() # Also generate the report if tests are failing
+        uses: davelosert/vitest-coverage-report-action@v2.1.1
+        with:
+          name: 'Frontend'
+          json-summary-path: './coverage/coverage-summary.json'
+          json-final-path: './coverage/coverage-final.json'
+
 ```
 
 ### Setup
