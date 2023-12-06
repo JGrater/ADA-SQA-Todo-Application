@@ -1,4 +1,4 @@
-# ADA SQA "To Do List Application" UI
+# ADA SQA "To Do List Application"
 ## This is the front end UI for an application made for the SQA module week 2
 ### The back end service repo can be found here: https://github.com/kasandrop/ADA-Todo
 
@@ -50,7 +50,7 @@ Our project is a simple to-do application. It will help manage our daily tasks, 
 | Task creation with a non-existent label | When a user tries to create a task with a label that doesn't exist.                   | "Task creation failed: The label you've chosen does not exist. Please choose an existing label." | The task will not be created until an existing label is chosen. This ensures that all tasks are associated with valid labels.            |
 | Unknown error                           | When an unexpected error occurs that doesn't match any of the known error conditions. | "An unknown error occurred. Please try again."                                                   | The operation failed due to an unexpected issue. The user is advised to try the operation again or contact support if the error persists |
 
-### Api endpoints for tasks and labels:
+### API Endpoints for tasks and labels:
 
 These  can be access by accessing [OpenAPI definition](http://localhost:8091/swagger-ui/index.html)
 
@@ -106,8 +106,7 @@ Back end: Java, SQL
 
 - **Test Code Coverage:**
   
-Automatic coverage reports were set up for pull requests, here is an example (https://github.com/JGrater/ADA-SQA-Todo-Application-UI/pull/4):
-![coverage_report](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/72577411/02c587f3-4723-4075-b6d8-5c9a608b059f)
+Automatic coverage reports were set up for pull requests, example here: https://github.com/JGrater/ADA-SQA-Todo-Application-UI/pull/4
 
 - **Frameworks/Libraries:**
 
@@ -201,7 +200,11 @@ During the sprint, we utilized a Kanban board to visualize tasks for each team m
 
 ### Test Methodologies
 
+<To Be Filled In>
 
+### [Front End] Test scenarios
+
+<To Be Filled In>
 
 ### [Back End] Test scenarios 
 
@@ -249,14 +252,14 @@ During the sprint, we utilized a Kanban board to visualize tasks for each team m
 
 ### Types of Testing
 
-|Frontend Testing Used|Why?|
+|Testing Used|Why?|
 |-----|-----|
 |unit|To test if part of the code blocks for the frontend are working as expected|
 |integration|To test if integrating the frontend and javascript logic is working as expected|
 
 ### Evidence
 
-<To Be Filled In>
+![coverage_report](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/72577411/02c587f3-4723-4075-b6d8-5c9a608b059f)
 
 ## Coding Best Practices
 Coding best practices are a set of guidelines designed to improve the quality of software development and make the code more maintainable, scalable, and readable.
