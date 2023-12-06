@@ -388,31 +388,34 @@ jobs:
 
 ### IEEE730
 
-<To Be Filled In>
+IEEE 730 is a standard that guides the creation of Software Quality Assurance Plans (SQAP) for software projects. It outlines the structure of the plan, including management responsibilities, documentation requirements, testing procedures, and processes for identifying and correcting defects. The standard aims to ensure a systematic and standardized approach to software quality assurance throughout a project.
 
 ### Reasons for Choosing
 
-<To Be Filled In>
+IEEE 730 can ensure compliance with variable/class naming conventions and code readability across different services and repos. IEEE 730 is also beneficial as it makes it easier to ensure all stakeholder requirements (assessment requirements) are met. Additionally, if the application is expected to undergo long-term maintenance or frequent updates, a standardized quality assurance plan can streamline these activities and maintain consistent quality. While IEEE 730 may not be necessary for all projects, its adoption can be justified based on the complexity, scale, regulatory requirements, and long-term considerations of the "To Do List" application. It would make sure any future updates or maintanence of the codebase are kept up to a high and consistent standard of quality.
 
 ### Key Features Applied
 
-<To Be Filled In>
+- Types of documentation to write and use
+- Reviews and Audits
+- Testing (Automated Testing, Unit Tests, etc.)
+- Adhering to standards and naming conventions.
 
 ## Performance and Accessibility Audit
+
+
+### Tools Used
+
+For our performance and accessibility audit, we leveraged Google Lighthouse CI to ensure a comprehensive examination of our digital products. Implementing an automated and continuous integration approach, Google Lighthouse CI facilitated regular assessments of our web applications' accessibility standards. The tool provided valuable insights into factors such as performance, best practices, SEO, and most importantly, accessibility compliance. Through the utilization of Lighthouse CI, we not only identified potential accessibility issues but also established a framework for ongoing monitoring and improvement, aligning our digital offerings with inclusive design principles and enhancing the user experience for all.
+
+### Key Results
+
 Google Lighthouse was used for automated performance and accessibility testing (https://github.com/GoogleChrome/lighthouse-ci)
 Here is a sample of a [report](https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1701862677309-31108.report.html) on one of the pull requests:
 
 ![performance_accessibility](https://github.com/JGrater/ADA-SQA-Todo-Application-UI/assets/72577411/8359d00d-7b1e-4621-9cc5-b7ed8d26e0c5)
 
 
-### Tools Used
-
-<To Be Filled In>
-
-### Key Results
-
-<To Be Filled In>
-
 ### Critical Analysis
 
-<To Be Filled In>
+The exceptional performance score indicates a well-optimized and efficient digital product, likely leading to a smooth user experience. The flawless accessibility rating is particularly commendable, showcasing a commitment to inclusivity and user-friendly design. However, it's essential to delve deeper into the specifics of the performance metric to identify potential areas for improvement. Consider examining which aspects contributed to the 10% deduction in performance to further refine the application's speed and efficiency. Overall, this achievement reflects a strong foundation but also provides an opportunity for continuous enhancement to maintain high standards across all aspects of your digital offerings.
