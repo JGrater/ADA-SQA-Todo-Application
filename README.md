@@ -1,144 +1,75 @@
-# ADA SQA "To Do List Application"
-## This is an application made for the SQA module week 2
+# Nuxt 3 Minimal Starter
 
-### Key Features:
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-<To Be Filled In>
+## Setup
 
-### Screenshots
+Make sure to install the dependencies:
 
-<To Be Filled In>
+```bash
+# npm
+npm install
 
-## Team Description
+# pnpm
+pnpm install
 
-<To Be Filled In>
+# yarn
+yarn install
 
-### Team Members
+# bun
+bun install
+```
 
-- **Marcin Wasilewski**
-  - Role/Responsibility: <To Be Filled In>
-  - Percentage Contribution: 25%
+## Development Server
 
-- **Jason Grater**
-  - Role/Responsibility: <To Be Filled In>
-  - Percentage Contribution: 25%
+Start the development server on `http://localhost:3000`:
 
-- **James Brown**
-  - Role/Responsibility: <To Be Filled In>
-  - Percentage Contribution: 25%
- 
-- **Wares Islam**
-  - Role/Responsibility: <To Be Filled In>
-  - Percentage Contribution: 25%
+```bash
+# npm
+npm run dev
 
-...
+# pnpm
+pnpm run dev
 
-## Tools Used
+# yarn
+yarn dev
 
-<To Be Filled In>
+# bun
+bun run dev
+```
 
-- **Version Control:** <To Be Filled In>
-- **Testing:** <To Be Filled In>
-- **Test Code Coverage:** <To Be Filled In>
-- **Frameworks/Libraries:** <To Be Filled In>
-- **Linters:** <To Be Filled In>
-- **Project Management Tools:** <To Be Filled In>
-- **Performance and Accessibility Audit:** <To Be Filled In>
+## Production
 
-## Instructions
+Build the application for production:
 
-<To Be Filled In>
+```bash
+# npm
+npm run build
 
-### How to Clone and Run
+# pnpm
+pnpm run build
 
-<To Be Filled In>
+# yarn
+yarn build
 
-### How to Use the Application
+# bun
+bun run build
+```
 
-<To Be Filled In>
+Locally preview production build:
 
-## Project Workflow
+```bash
+# npm
+npm run preview
 
-<To Be Filled In>
+# pnpm
+pnpm run preview
 
-### Project Management Strategies
+# yarn
+yarn preview
 
-<To Be Filled In>
+# bun
+bun run preview
+```
 
-### Ceremonies
-
-<To Be Filled In>
-
-### Retrospectives
-
-<To Be Filled In>
-
-### Agile Practices
-
-<To Be Filled In>
-
-## Test Methodologies and Tools
-
-<To Be Filled In>
-
-### Test Methodologies
-
-<To Be Filled In>
-
-### Types of Testing
-
-<To Be Filled In>
-
-### Evidence
-
-<To Be Filled In>
-
-## Coding Best Practices
-
-<To Be Filled In>
-
-## CI Pipeline
-
-<To Be Filled In>
-
-### Setup
-
-<To Be Filled In>
-
-### Test Suite Results
-
-<To Be Filled In>
-
-### Pull Request Strategies
-
-<To Be Filled In>
-
-## Standards
-
-### IEEE730
-
-<To Be Filled In>
-
-### Reasons for Choosing
-
-<To Be Filled In>
-
-### Key Features Applied
-
-<To Be Filled In>
-
-## Performance and Accessibility Audit
-
-<To Be Filled In>
-
-### Tools Used
-
-<To Be Filled In>
-
-### Key Results
-
-<To Be Filled In>
-
-### Critical Analysis
-
-<To Be Filled In>
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
