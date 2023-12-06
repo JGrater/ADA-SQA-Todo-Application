@@ -28,3 +28,10 @@ jobs:
         run: npm ci
       - name: Execute Coverage report
         run: npm run test:coverage
+      - name: Vitest Coverage Report
+        if: always() # Also generate the report if tests are failing
+        uses: davelosert/vitest-coverage-report-action@v2.1.1
+        with:
+          name: 'Frontend'
+          json-summary-path: './coverage/coverage-summary.json'
+          json-final-path: './coverage/coverage-final.json'
