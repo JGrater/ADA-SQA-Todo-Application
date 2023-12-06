@@ -6,8 +6,7 @@ export default {
     globals: true,
     environment: 'jsdom',
     coverage: {
-      provider: 'v8',
-      reporter: ['text', 'json', 'html', 'vue'],
+      reporter: ['text', 'json', 'json-summary', 'html', 'vue'],
     },
   },
   resolve: {
