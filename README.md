@@ -264,15 +264,18 @@ jobs:
 
 ### IEEE730
 
-<To Be Filled In>
+IEEE 730 is a standard that guides the creation of Software Quality Assurance Plans (SQAP) for software projects. It outlines the structure of the plan, including management responsibilities, documentation requirements, testing procedures, and processes for identifying and correcting defects. The standard aims to ensure a systematic and standardized approach to software quality assurance throughout a project.
 
 ### Reasons for Choosing
 
-<To Be Filled In>
+IEEE 730 can ensure compliance with variable/class naming conventions and code readability across different services and repos. IEEE 730 is also beneficial as it makes it easier to ensure all stakeholder requirements (assessment requirements) are met. Additionally, if the application is expected to undergo long-term maintenance or frequent updates, a standardized quality assurance plan can streamline these activities and maintain consistent quality. While IEEE 730 may not be necessary for all projects, its adoption can be justified based on the complexity, scale, regulatory requirements, and long-term considerations of the "To Do List" application. It would make sure any future updates or maintanence of the codebase are kept up to a high and consistent standard of quality.
 
 ### Key Features Applied
 
-<To Be Filled In>
+- Types of documentation to write and use
+- Reviews and Audits
+- Testing (Automated Testing, Unit Tests, etc.)
+- Adhering to standards and naming conventions.
 
 ## Performance and Accessibility Audit
 Google Lighthouse was used for automated performance and accessibility testing (https://github.com/GoogleChrome/lighthouse-ci)
@@ -283,7 +286,7 @@ Here is a sample of a [report](https://storage.googleapis.com/lighthouse-infrast
 
 ### Tools Used
 
-<To Be Filled In>
+- Google Lighthouse
 
 ### Key Results
 
